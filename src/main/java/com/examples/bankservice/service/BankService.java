@@ -14,7 +14,7 @@ import java.util.concurrent.ConcurrentHashMap;
 @Service
 public class BankService {
 
-    private static final BigDecimal DEFAULT_CREDIT_LIMIT = new BigDecimal("10000");
+    private static final BigDecimal DEFAULT_CREDIT_LIMIT = new BigDecimal("100000");
 
     // Tracks how much credit each user has already used
     private final Map<String, BigDecimal> usedCredit = new ConcurrentHashMap<>();
